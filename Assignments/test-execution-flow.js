@@ -1,3 +1,4 @@
+/*
 let design="=============================";
 console.log(design);
 let profile="TEST EXECUTION FLOW"
@@ -39,3 +40,15 @@ console.log("Step6 : " + step6);
 status="Completed";
 console.log("Status : " + status);
 console.log("  ");
+
+
+*/
+
+
+let testCases = ["Login", "Logout", "Search", "Checkout"];
+for (let i= 0; i<testCases.length; i++)
+{
+    console.log(testCases[i]);
+}
+
+

@@ -1,8 +1,8 @@
-/*
+
 console.log("Status before declaration: " + testStatus);
 let testStatus = "PASSED";
 console.log("Status after declaration: " + testStatus);
-*/
+
 /*
 PS C:\Users\Noel Abhinay\OneDrive\learningjavascript\assignments> node var-problems.js
 Status before declaration: undefined
@@ -10,36 +10,36 @@ Status after declaration: PASSED
 PS C:\Users\Noel Abhinay\OneDrive\learningjavascript\assignments> 
 */
 
-/*
+
 console.log("Status before declaration: " + testStatus);
 let testStatus = "PASSED";
 console.log("Status after declaration: " + testStatus);
 
 
 ReferenceError: Cannot access 'testStatus' before initialization
-*/
 
-/*
+
+
 let testStatus = "PASSED";
 console.log("Status before declaration: " + testStatus);
 console.log("Status after declaration: " + testStatus);
-
+/*
 PS C:\Users\Noel Abhinay\OneDrive\learningjavascript\assignments> node var-problems.js
 Status before declaration: PASSED
 Status after declaration: PASSED
-
 */
+
 
 /*
 **Step 2 — `var` leaks out of if-blocks**
 */
-/*
+
 if (true) {
     var tempUser = "admin@test.com";
     console.log("Inside block: " + tempUser);
 }
 console.log("Outside block: " + tempUser);
-*/
+
 
 /*
 PS C:\Users\Noel Abhinay\OneDrive\learningjavascript\assignments> node var-problems.js
@@ -48,26 +48,27 @@ Outside block: admin@test.com
 
 */
 
-/*
+
 if (true) {
     let tempUser = "admin@test.com";
     console.log("Inside block: " + tempUser);
 }
-/*console.log("Outside block: " + tempUser); */
+
+console.log("Outside block: " + tempUser); */
 /*
 Node.js v24.15.0
 PS C:\Users\Noel Abhinay\OneDrive\learningjavascript\assignments> node var-problems.js
 Inside block: admin@test.com
 */
 
-/*
+
 if (true) {
     let tempUser = "admin@test.com";
     console.log("Inside block: " + tempUser);
 }
 console.log("Outside block: " + tempUser); 
 
-
+/*
 
 ReferenceError: tempUser is not defined
 
