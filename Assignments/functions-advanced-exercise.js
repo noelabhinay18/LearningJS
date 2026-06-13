@@ -114,7 +114,7 @@ let testNames = // YOUR CODE HERE
 // 2c: Get array of scores that are above 80
 ///let highScores = // YOUR CODE HERE
 
-
+/*
  let highScores= testResults
  .filter(test=>test.score>80)
  .map(test=>test.score)
@@ -141,3 +141,26 @@ console.log(allPassed);
 
 let anyFailed = testResults.some((test) => test.status==="FAILED" )
 console.log(anyFailed);
+
+*/
+
+
+function ping(url) {
+  return new Promise((resolve, reject) => {
+    if (url.startsWith("https")) {
+      resolve(200);
+    } else {
+      reject("400");
+    }
+  });
+}
+ 
+ping("http://www.google.com")
+  .then((code) => console.log("Operation success with code - ", code))
+  .catch((errorCode) =>
+    console.log("Operation failed with error - ", errorCode),
+  );
+
+
+
+  
